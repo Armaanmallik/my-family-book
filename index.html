@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>My Family</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="firstp">My Family Book</h1>
+        <img id="album" src="https://images-na.ssl-images-amazon.com/images/I/51Veiu1H60L._SX258_BO1,204,203,200_.jpg">
+        <div>
+            <button type="button" onclick="nextslide()">Next</button>
+            </div>
+            <p id="reasontext">My Family</p>
+            <script>
+              var reasons = [
+"Umar Mallik the Father",
+"Ayesha Mallik the Mother",
+"Armaan Mallik the Elder Brother",
+"Adaan Mallik the Younger Brother"
+];
+
+var images = [
+"https://webstockreview.net/images/boys-clipart-dad-9.png",
+"https://png.pngtree.com/png-vector/20190120/ourmid/pngtree-illustrator-mother-mother-and-child-mother-and-child-illustration-illustration-mother-png-image_493083.jpg",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQzrz9_PihVsZzfqeYx7OccAqbHPQ9Av48dg&usqp=CAU",
+"https://pngimage.net/wp-content/uploads/2018/06/o-poderoso-chefinho-png-2.png"
+];
+
+var i = 0;
+function nextslide() {
+if(i == 5)
+ {
+ i=0;
+ }
+document.getElementById("reasontext").innerHTML = reasons[i];
+document.getElementById("album").src = images[i];
+i++;
+}  
+            </script>
+    </body>
+</html>
